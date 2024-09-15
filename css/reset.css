@@ -1,0 +1,11 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #777778;
+}
+
+a, span, p, h1, h2, h3, h4, h5, h6, div, li, strong, em, b, i, u, small,
+mark, cite, q, blockquote, pre, code, label, table, input, select, textarea, button {
+    font-family: 'Montserrat';
+}

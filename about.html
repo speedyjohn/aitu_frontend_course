@@ -7,294 +7,282 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>About Du Rove</title>
-    <style>
-        *, *:before, *:after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Montserrat';
-            color: #fefefe;
-        }
-        html {
-            background: #111;
-        }
-
-        table {
-            width: 100%;
-            margin-top: 30px;
-            border-collapse: collapse;
-            background: #181818;
-        }
-        td {
-            width: 33%;
-            height: 50px;
-            padding: 10px;
-            border: 1px solid #000;
-        }
-        thead {
-            background: darkred;
-            color: #fff;
-            font-weight: 600;
-        }
-    </style>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Du Rove</title>
 </head>
 <body>
-<header style="position:fixed; top: 0; left: 0; width: 100%; height: 80px; background: #111; box-shadow: 0 0 3px rgba(254,254,254,0.3)">
-    <div style="width: 100%; height: 50px; padding: 10px;">
-        <h1 style="font-size: 25px;">Software Engineer Du Rove</h1>
-    </div>
-    <nav>
-        <ul style="
-            width: 100%;
-            height: 100%;
-            padding: 0 30px;
-            display: flex;
-            justify-content:space-between;
-            list-style-type: none;
-            color: #fff">
-            <li style="height: 30px; line-height: 30px; text-align: center;"><a href="index.html" style="color: #fff">Main</a></li>
-            <li style="height: 30px; line-height: 30px; text-align: center;"><a href="about.html" style="color: #fff">About</a></li>
-            <li style="height: 30px; line-height: 30px; text-align: center; "><a href="experience.html" style="color: #fff">Experience</a></li>
-            <li style="height: 30px; line-height: 30px; text-align: center;"><a href="testimonials.html" style="color: #fff">Testimonials</a></li>
-            <li style="height: 30px; line-height: 30px; text-align: center;"><a href="price.html" style="color: #fff">Price</a></li>
-            <li style="height: 30px; line-height: 30px; text-align: center;"><a href="contact.html" style="color: #fff">Contact</a></li>
+<header class="header">
+    <nav class="header__menu">
+        <ul class="header__menu-list">
+            <li class="header__menu-item"><a class="header__menu-link" href="index.html">Main</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="about.html">About</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="experience.html">Experience</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="testimonials.html">Testimonials</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="price.html">Price</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
-<main style="display: block; width: 1000px; margin: 100px auto 0 auto; box-shadow: 0 0 3px rgba(87,87,87,0.38); padding: 10px; border-radius: 15px">
-    <section style="padding-top: 30px;">
-        <h2 style="text-align:center; color: #fefefe; font-size: 45px;">About me</h2>
+
+<main class="main">
+    <section>
+        <h2 class="section__title">About me</h2>
         <figure style="margin-top: 20px;">
-            <img src="img/durov1.webp" alt="Picture of Du Rove" style="width: 100%;">
-            <figcaption>It's me</figcaption>
+            <img src="img/about/durov1.webp" alt="Picture of Du Rove" style="width: 100%;">
         </figure>
-        <p style="text-align:center; margin-top: 30px; color: #fefefe">Hello, I'm Durov, a software engineer with a passion for solving complex problems through code. I specialize in building efficient and scalable backend systems, but I also enjoy working on full-stack projects where I can integrate both frontend and backend solutions. My primary programming languages are Python and JavaScript, though I’m always eager to learn new technologies that can help me create better software. In my free time, I enjoy contributing to open-source projects and exploring new developments in AI and machine learning. I'm always looking for opportunities to collaborate on innovative projects and grow as a developer.</p>
-        <div style="display:flex; justify-content:space-between; margin-top: 30px">
-            <div style="background: #181818; height: 300px; width: 23%; box-shadow: 0 0 3px #000; border-radius: 10px; padding: 50px 15px 15px 15px; text-align:center;">
-                <h2 style="margin-bottom: 20px;">Web design</h2>
-                <span>Web design involves creating visually appealing and functional layouts for websites, focusing on user experience, aesthetics, and accessibility.</span>
+        <p class="section__paragraph">Hello, I'm Durov, a software engineer with a passion for solving complex problems through code. I specialize in building efficient and scalable backend systems, but I also enjoy working on full-stack projects where I can integrate both frontend and backend solutions. My primary programming languages are Python and JavaScript, though I’m always eager to learn new technologies that can help me create better software. In my free time, I enjoy contributing to open-source projects and exploring new developments in AI and machine learning. I'm always looking for opportunities to collaborate on innovative projects and grow as a developer.</p>
+        <div class="about">
+            <div class="about__row">
+                <div class="about__column">
+                    <div class="about-item">
+                        <div class="about-item__icon">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h2 class="about-item__title">Web design</h2>
+                        <p class="about-item__text">Web design involves creating visually appealing and functional layouts for websites, focusing on user experience, aesthetics, and accessibility.</p>
+                    </div>
+                </div>
+                <div class="about__column">
+                    <div class="about-item">
+                        <div class="about-item__icon">
+                            <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                        <h2 class="about-item__title">Gamedev</h2>
+                        <p class="about-item__text">Gamedev is the process of designing, developing, and producing video games, combining art, programming, and storytelling for interactive entertainment.</p>
+                    </div>
+                </div>
+                <div class="about__column">
+                    <div class="about-item">
+                        <div class="about-item__icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h2 class="about-item__title">Backend</h2>
+                        <p class="about-item__text">Backend refers to server-side operations, handling databases, APIs, and logic to support the functionality of applications and websites.</p>
+                    </div>
+                </div>
+                <div class="about__column">
+                    <div class="about-item">
+                        <div class="about-item__icon">
+                            <i class="fa-solid fa-window-maximize"></i>
+                        </div>
+                        <h2 class="about-item__title">Frontend</h2>
+                        <p class="about-item__text">Frontend involves client-side development, managing the visual and interactive aspects of a website or application that users directly engage with.</p>
+                    </div>
+                </div>
             </div>
-            <div style="background: #181818; height: 300px; width: 23%; box-shadow: 0 0 3px #000; border-radius: 10px; padding: 50px 15px 15px 15px; text-align:center;">
-                <h2 style="margin-bottom: 20px;">Gamedev</h2>
-                <span>Gamedev is the process of designing, developing, and producing video games, combining art, programming, and storytelling for interactive entertainment.</span>
-            </div>
-            <div style="background: #181818; height: 300px; width: 23%; box-shadow: 0 0 3px #000; border-radius: 10px; padding: 50px 15px 15px 15px; text-align:center;">
-                <h2 style="margin-bottom: 20px;">Backend</h2>
-                <span>Backend refers to server-side operations, handling databases, APIs, and logic to support the functionality of applications and websites.</span>
-            </div>
-            <div style="background: #181818; height: 300px; width: 23%; box-shadow: 0 0 3px #000; border-radius: 10px; padding: 50px 15px 15px 15px; text-align:center;">
-                <h2 style="margin-bottom: 20px;">Frontend</h2>
-                <span>Frontend involves client-side development, managing the visual and interactive aspects of a website or application that users directly engage with.</span>
-            </div>
+            <h2 class="about__subtitle">Here is a more detailed list of my skills</h2>
+            <ul class="about__list">
+                <li>HTML</li>
+                <li>The ability to fly</li>
+                <li>The ability to walk on water</li>
+                <li>The ability to turn things into gold</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Angular</li>
+                <li>Vue.js</li>
+                <li>TypeScript</li>
+                <li>SASS/LESS</li>
+                <li>Bootstrap</li>
+                <li>Tailwind CSS</li>
+                <li>Responsive Design</li>
+                <li>Webpack</li>
+                <li>Babel</li>
+                <li>jQuery</li>
+                <li>AJAX</li>
+                <li>REST APIs</li>
+                <li>GraphQL</li>
+                <li>Progressive Web Apps (PWAs)</li>
+                <li>Cross-Browser Compatibility</li>
+                <li>UI/UX Design</li>
+                <li>Figma</li>
+                <li>Adobe XD</li>
+                <li>Performance Optimization</li>
+                <li>Testing (Jest, Mocha)</li>
+                <li>Accessibility (a11y)</li>
+                <li>Gulp</li>
+                <li>Version Control (Git)</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Python</li>
+                <li>Django</li>
+                <li>Flask</li>
+                <li>Ruby on Rails</li>
+                <li>PHP</li>
+                <li>Laravel</li>
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>C#</li>
+                <li>.NET Core</li>
+                <li>Go</li>
+                <li>Microservices Architecture</li>
+                <li>RESTful Services</li>
+                <li>GraphQL</li>
+                <li>SQL Databases (MySQL, PostgreSQL)</li>
+                <li>NoSQL Databases (MongoDB, Redis)</li>
+                <li>Database Design</li>
+                <li>Authentication & Authorization</li>
+                <li>APIs Development</li>
+                <li>Message Brokers (RabbitMQ, Kafka)</li>
+                <li>Containerization (Docker)</li>
+                <li>Cloud Platforms (AWS, Azure, GCP)</li>
+                <li>Serverless Architecture</li>
+                <li>Unity</li>
+                <li>Unreal Engine</li>
+                <li>C#</li>
+                <li>C++</li>
+                <li>Game Design</li>
+                <li>3D Modeling</li>
+                <li>Animation</li>
+                <li>Physics</li>
+                <li>AI Programming</li>
+                <li>Networking</li>
+                <li>Shader Programming</li>
+                <li>Multiplayer Systems</li>
+                <li>Performance Optimization</li>
+                <li>Game Mechanics</li>
+                <li>UI/UX for Games</li>
+                <li>Virtual Reality (VR)</li>
+                <li>Augmented Reality (AR)</li>
+                <li>Level Design</li>
+                <li>Asset Management</li>
+                <li>Version Control (Git)</li>
+                <li>Debugging & Profiling</li>
+                <li>Sound Design</li>
+                <li>Interactive Storytelling</li>
+                <li>Project Management</li>
+                <li>Agile Methodologies</li>
+                <li>Scrum</li>
+                <li>Kanban</li>
+                <li>Risk Management</li>
+                <li>Team Leadership</li>
+                <li>Stakeholder Communication</li>
+                <li>Resource Allocation</li>
+                <li>Budgeting</li>
+                <li>Strategic Planning</li>
+                <li>Performance Metrics</li>
+                <li>Change Management</li>
+                <li>Conflict Resolution</li>
+                <li>Time Management</li>
+                <li>Process Improvement</li>
+                <li>Decision Making</li>
+                <li>Employee Development</li>
+                <li>Training and Mentoring</li>
+                <li>Client Relationship Management</li>
+                <li>Reporting & Documentation</li>
+                <li>Product Lifecycle Management</li>
+                <li>Organizational Behavior</li>
+                <li>GraphQL</li>
+                <li>Performance Tuning</li>
+                <li>RESTful APIs</li>
+                <li>Security Practices</li>
+                <li>Database Management</li>
+                <li>ORM (Object-Relational Mapping)</li>
+                <li>DevOps</li>
+                <li>Continuous Integration (CI)</li>
+                <li>Continuous Deployment (CD)</li>
+                <li>Monitoring and Logging</li>
+                <li>API Documentation</li>
+                <li>Debugging Techniques</li>
+                <li>Code Review</li>
+                <li>Software Design Patterns</li>
+                <li>Event-Driven Architecture</li>
+                <li>API Gateway</li>
+                <li>Service-Oriented Architecture (SOA)</li>
+                <li>OAuth</li>
+                <li>JWT (JSON Web Tokens)</li>
+                <li>Data Warehousing</li>
+                <li>ETL (Extract, Transform, Load)</li>
+                <li>Data Mining</li>
+                <li>Data Analysis</li>
+                <li>Big Data Technologies</li>
+                <li>Machine Learning</li>
+                <li>AI Algorithms</li>
+                <li>Natural Language Processing (NLP)</li>
+                <li>Computer Vision</li>
+                <li>Deep Learning</li>
+                <li>Reinforcement Learning</li>
+                <li>Game Engines</li>
+                <li>Shader Programming</li>
+                <li>Physics Engines</li>
+                <li>Pathfinding Algorithms</li>
+                <li>Procedural Generation</li>
+                <li>Level Optimization</li>
+                <li>Game Analytics</li>
+                <li>Augmented Reality (AR)</li>
+                <li>Virtual Reality (VR)</li>
+                <li>Mixed Reality (MR)</li>
+                <li>Game Monetization</li>
+                <li>Ad Integration</li>
+                <li>Player Retention Strategies</li>
+                <li>Game Balancing</li>
+                <li>Game Testing</li>
+                <li>Beta Testing</li>
+                <li>Release Management</li>
+                <li>Community Management</li>
+                <li>Content Creation</li>
+                <li>Storyboarding</li>
+                <li>Voice Acting</li>
+                <li>Sound Effects</li>
+                <li>Music Composition</li>
+                <li>Localization</li>
+                <li>Internationalization</li>
+                <li>Game Marketing</li>
+                <li>Game Distribution Platforms</li>
+                <li>Analytics Tools</li>
+                <li>Financial Management</li>
+                <li>Investment Strategies</li>
+                <li>Business Development</li>
+                <li>Negotiation Skills</li>
+                <li>Public Speaking</li>
+                <li>Presentation Skills</li>
+                <li>Networking</li>
+                <li>Event Planning</li>
+                <li>Customer Support</li>
+                <li>Customer Feedback Analysis</li>
+                <li>Quality Assurance</li>
+                <li>Usability Testing</li>
+                <li>Human-Computer Interaction (HCI)</li>
+                <li>Prototyping</li>
+                <li>Wireframing</li>
+                <li>Interaction Design</li>
+                <li>Visual Design</li>
+                <li>Information Architecture</li>
+                <li>Content Strategy</li>
+                <li>Branding</li>
+                <li>Marketing Strategy</li>
+                <li>Product Management</li>
+                <li>Roadmapping</li>
+                <li>Feature Prioritization</li>
+                <li>Release Planning</li>
+                <li>Performance Reviews</li>
+                <li>Team Building</li>
+                <li>Organizational Development</li>
+                <li>Change Management</li>
+                <li>Employee Engagement</li>
+                <li>Conflict Mediation</li>
+                <li>Workforce Planning</li>
+                <li>Succession Planning</li>
+                <li>Talent Acquisition</li>
+                <li>Recruitment Strategies</li>
+                <li>Onboarding</li>
+                <li>Employee Retention</li>
+                <li>HR Policies</li>
+                <li>Compliance Management</li>
+                <li>Legal Knowledge</li>
+            </ul>
         </div>
-        <h2 style="margin: 15px 0;">Here is a more detailed list of my skills</h2>
-        <ul style="list-style-type: none;">
-            <li>HTML</li>
-            <li>The ability to fly</li>
-            <li>The ability to walk on water</li>
-            <li>The ability to turn things into gold</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Angular</li>
-            <li>Vue.js</li>
-            <li>TypeScript</li>
-            <li>SASS/LESS</li>
-            <li>Bootstrap</li>
-            <li>Tailwind CSS</li>
-            <li>Responsive Design</li>
-            <li>Webpack</li>
-            <li>Babel</li>
-            <li>jQuery</li>
-            <li>AJAX</li>
-            <li>REST APIs</li>
-            <li>GraphQL</li>
-            <li>Progressive Web Apps (PWAs)</li>
-            <li>Cross-Browser Compatibility</li>
-            <li>UI/UX Design</li>
-            <li>Figma</li>
-            <li>Adobe XD</li>
-            <li>Performance Optimization</li>
-            <li>Testing (Jest, Mocha)</li>
-            <li>Accessibility (a11y)</li>
-            <li>Gulp</li>
-            <li>Version Control (Git)</li>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>Python</li>
-            <li>Django</li>
-            <li>Flask</li>
-            <li>Ruby on Rails</li>
-            <li>PHP</li>
-            <li>Laravel</li>
-            <li>Java</li>
-            <li>Spring Boot</li>
-            <li>C#</li>
-            <li>.NET Core</li>
-            <li>Go</li>
-            <li>Microservices Architecture</li>
-            <li>RESTful Services</li>
-            <li>GraphQL</li>
-            <li>SQL Databases (MySQL, PostgreSQL)</li>
-            <li>NoSQL Databases (MongoDB, Redis)</li>
-            <li>Database Design</li>
-            <li>Authentication & Authorization</li>
-            <li>APIs Development</li>
-            <li>Message Brokers (RabbitMQ, Kafka)</li>
-            <li>Containerization (Docker)</li>
-            <li>Cloud Platforms (AWS, Azure, GCP)</li>
-            <li>Serverless Architecture</li>
-            <li>Unity</li>
-            <li>Unreal Engine</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Game Design</li>
-            <li>3D Modeling</li>
-            <li>Animation</li>
-            <li>Physics</li>
-            <li>AI Programming</li>
-            <li>Networking</li>
-            <li>Shader Programming</li>
-            <li>Multiplayer Systems</li>
-            <li>Performance Optimization</li>
-            <li>Game Mechanics</li>
-            <li>UI/UX for Games</li>
-            <li>Virtual Reality (VR)</li>
-            <li>Augmented Reality (AR)</li>
-            <li>Level Design</li>
-            <li>Asset Management</li>
-            <li>Version Control (Git)</li>
-            <li>Debugging & Profiling</li>
-            <li>Sound Design</li>
-            <li>Interactive Storytelling</li>
-            <li>Project Management</li>
-            <li>Agile Methodologies</li>
-            <li>Scrum</li>
-            <li>Kanban</li>
-            <li>Risk Management</li>
-            <li>Team Leadership</li>
-            <li>Stakeholder Communication</li>
-            <li>Resource Allocation</li>
-            <li>Budgeting</li>
-            <li>Strategic Planning</li>
-            <li>Performance Metrics</li>
-            <li>Change Management</li>
-            <li>Conflict Resolution</li>
-            <li>Time Management</li>
-            <li>Process Improvement</li>
-            <li>Decision Making</li>
-            <li>Employee Development</li>
-            <li>Training and Mentoring</li>
-            <li>Client Relationship Management</li>
-            <li>Reporting & Documentation</li>
-            <li>Product Lifecycle Management</li>
-            <li>Organizational Behavior</li>
-            <li>GraphQL</li>
-            <li>Performance Tuning</li>
-            <li>RESTful APIs</li>
-            <li>Security Practices</li>
-            <li>Database Management</li>
-            <li>ORM (Object-Relational Mapping)</li>
-            <li>DevOps</li>
-            <li>Continuous Integration (CI)</li>
-            <li>Continuous Deployment (CD)</li>
-            <li>Monitoring and Logging</li>
-            <li>API Documentation</li>
-            <li>Debugging Techniques</li>
-            <li>Code Review</li>
-            <li>Software Design Patterns</li>
-            <li>Event-Driven Architecture</li>
-            <li>API Gateway</li>
-            <li>Service-Oriented Architecture (SOA)</li>
-            <li>OAuth</li>
-            <li>JWT (JSON Web Tokens)</li>
-            <li>Data Warehousing</li>
-            <li>ETL (Extract, Transform, Load)</li>
-            <li>Data Mining</li>
-            <li>Data Analysis</li>
-            <li>Big Data Technologies</li>
-            <li>Machine Learning</li>
-            <li>AI Algorithms</li>
-            <li>Natural Language Processing (NLP)</li>
-            <li>Computer Vision</li>
-            <li>Deep Learning</li>
-            <li>Reinforcement Learning</li>
-            <li>Game Engines</li>
-            <li>Shader Programming</li>
-            <li>Physics Engines</li>
-            <li>Pathfinding Algorithms</li>
-            <li>Procedural Generation</li>
-            <li>Level Optimization</li>
-            <li>Game Analytics</li>
-            <li>Augmented Reality (AR)</li>
-            <li>Virtual Reality (VR)</li>
-            <li>Mixed Reality (MR)</li>
-            <li>Game Monetization</li>
-            <li>Ad Integration</li>
-            <li>Player Retention Strategies</li>
-            <li>Game Balancing</li>
-            <li>Game Testing</li>
-            <li>Beta Testing</li>
-            <li>Release Management</li>
-            <li>Community Management</li>
-            <li>Content Creation</li>
-            <li>Storyboarding</li>
-            <li>Voice Acting</li>
-            <li>Sound Effects</li>
-            <li>Music Composition</li>
-            <li>Localization</li>
-            <li>Internationalization</li>
-            <li>Game Marketing</li>
-            <li>Game Distribution Platforms</li>
-            <li>Analytics Tools</li>
-            <li>Financial Management</li>
-            <li>Investment Strategies</li>
-            <li>Business Development</li>
-            <li>Negotiation Skills</li>
-            <li>Public Speaking</li>
-            <li>Presentation Skills</li>
-            <li>Networking</li>
-            <li>Event Planning</li>
-            <li>Customer Support</li>
-            <li>Customer Feedback Analysis</li>
-            <li>Quality Assurance</li>
-            <li>Usability Testing</li>
-            <li>Human-Computer Interaction (HCI)</li>
-            <li>Prototyping</li>
-            <li>Wireframing</li>
-            <li>Interaction Design</li>
-            <li>Visual Design</li>
-            <li>Information Architecture</li>
-            <li>Content Strategy</li>
-            <li>Branding</li>
-            <li>Marketing Strategy</li>
-            <li>Product Management</li>
-            <li>Roadmapping</li>
-            <li>Feature Prioritization</li>
-            <li>Release Planning</li>
-            <li>Performance Reviews</li>
-            <li>Team Building</li>
-            <li>Organizational Development</li>
-            <li>Change Management</li>
-            <li>Employee Engagement</li>
-            <li>Conflict Mediation</li>
-            <li>Workforce Planning</li>
-            <li>Succession Planning</li>
-            <li>Talent Acquisition</li>
-            <li>Recruitment Strategies</li>
-            <li>Onboarding</li>
-            <li>Employee Retention</li>
-            <li>HR Policies</li>
-            <li>Compliance Management</li>
-            <li>Legal Knowledge</li>
-        </ul>
+
     </section>
 </main>
-<footer style="margin-top: 50px; width: 100%; height: 150px; background: #181818; border-top: 1px solid black; display:flex; justify-content:center; align-items:center; flex-wrap: wrap; ">
-    <p style="width: 100%; text-align:center;">This website is created by Ismail Ragimov, Sergey Tarshilov, Kanagat Zholdasov</p>
-    <p style="width: 100%; text-align:center;">Astana IT University, 2024, Web Technologies(Frontend) course, 1st assigment</p>
-    <p style="width: 100%; text-align:center;">All rights reserved ©</p>
+<footer>
+    <p>This website is created by Ismail Ragimov, Sergey Tarshilov, Kanagat Zholdasov</p>
+    <p>Astana IT University, 2024, Web Technologies(Frontend) course, 1st assigment</p>
+    <p>All rights reserved ©</p>
 </footer>
+
+<!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/29456f816e.js" crossorigin="anonymous"></script>
 </body>
 </html>
