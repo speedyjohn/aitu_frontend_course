@@ -7,34 +7,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Du Rove</title>
 </head>
 <body>
-<header class="header">
-    <nav class="header__menu">
-        <ul class="header__menu-list">
-            <li class="header__menu-item"><a class="header__menu-link" href="index.html">Main</a></li>
-            <li class="header__menu-item"><a class="header__menu-link" href="about.html">About</a></li>
-            <li class="header__menu-item"><a class="header__menu-link" href="experience.html">Experience</a></li>
-            <li class="header__menu-item"><a class="header__menu-link" href="testimonials.html">Testimonials</a></li>
-            <li class="header__menu-item"><a class="header__menu-link" href="price.html">Price</a></li>
-            <li class="header__menu-item"><a class="header__menu-link" href="contact.html">Contact</a></li>
-        </ul>
+<header class="header navbar navbar-expand-lg">
+    <nav class="container-fluid">
+        <a class="navbar-brand text-light" href="/">Du Rove</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link header__menu-link" href="index.html">Main</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link header__menu-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link header__menu-link" href="experience.html">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link header__menu-link" href="testimonials.html">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link header__menu-link" href="price.html">Price</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link header__menu-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 </header>
 
 <main class="main">
     <section>
-        <h2 class="section__title">About me</h2>
+        <h2 class="section__title" data-aos="zoom-out-down"
+            data-aos-duration="1500"
+            data-aos-anchor-placement="bottom-bottom">About me</h2>
         <figure style="margin-top: 20px;">
             <img src="img/about/durov1.webp" alt="Picture of Du Rove" style="width: 100%;">
         </figure>
-        <p class="section__paragraph">Hello, I'm Durov, a software engineer with a passion for solving complex problems through code. I specialize in building efficient and scalable backend systems, but I also enjoy working on full-stack projects where I can integrate both frontend and backend solutions. My primary programming languages are Python and JavaScript, though I’m always eager to learn new technologies that can help me create better software. In my free time, I enjoy contributing to open-source projects and exploring new developments in AI and machine learning. I'm always looking for opportunities to collaborate on innovative projects and grow as a developer.</p>
+        <p class="section__paragraph" data-aos="zoom-in"
+           data-aos-duration="1500"
+           data-aos-anchor-placement="bottom-bottom">Hello, I'm Durov, a software engineer with a passion for solving complex problems through code. I specialize in building efficient and scalable backend systems, but I also enjoy working on full-stack projects where I can integrate both frontend and backend solutions. My primary programming languages are Python and JavaScript, though I’m always eager to learn new technologies that can help me create better software. In my free time, I enjoy contributing to open-source projects and exploring new developments in AI and machine learning. I'm always looking for opportunities to collaborate on innovative projects and grow as a developer.</p>
         <div class="about">
-            <div class="about__row">
-                <div class="about__column">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 about__column" data-aos="fade-up-right"
+                     data-aos-duration="2000"
+                     data-aos-anchor-placement="bottom-bottom">
                     <div class="about-item">
                         <div class="about-item__icon">
                             <i class="fa-solid fa-wand-magic-sparkles"></i>
@@ -43,7 +69,9 @@
                         <p class="about-item__text">Web design involves creating visually appealing and functional layouts for websites, focusing on user experience, aesthetics, and accessibility.</p>
                     </div>
                 </div>
-                <div class="about__column">
+                <div class="col-md-6 col-lg-3 about__column" data-aos="fade-up-right"
+                     data-aos-duration="2000"
+                     data-aos-anchor-placement="bottom-bottom">
                     <div class="about-item">
                         <div class="about-item__icon">
                             <i class="fa-solid fa-gamepad"></i>
@@ -52,7 +80,9 @@
                         <p class="about-item__text">Gamedev is the process of designing, developing, and producing video games, combining art, programming, and storytelling for interactive entertainment.</p>
                     </div>
                 </div>
-                <div class="about__column">
+                <div class="col-md-6 col-lg-3 about__column" data-aos="fade-up-left"
+                     data-aos-duration="2000"
+                     data-aos-anchor-placement="bottom-bottom">
                     <div class="about-item">
                         <div class="about-item__icon">
                             <i class="fa-solid fa-laptop-code"></i>
@@ -61,7 +91,9 @@
                         <p class="about-item__text">Backend refers to server-side operations, handling databases, APIs, and logic to support the functionality of applications and websites.</p>
                     </div>
                 </div>
-                <div class="about__column">
+                <div class="col-md-6 col-lg-3 about__column" data-aos="fade-up-left"
+                     data-aos-duration="2000"
+                     data-aos-anchor-placement="bottom-bottom">
                     <div class="about-item">
                         <div class="about-item__icon">
                             <i class="fa-solid fa-window-maximize"></i>
@@ -73,207 +105,206 @@
             </div>
             <h2 class="about__subtitle">Here is a more detailed list of my skills</h2>
             <ul class="about__list">
-                <li>HTML</li>
-                <li>The ability to fly</li>
-                <li>The ability to walk on water</li>
-                <li>The ability to turn things into gold</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Angular</li>
-                <li>Vue.js</li>
-                <li>TypeScript</li>
-                <li>SASS/LESS</li>
-                <li>Bootstrap</li>
-                <li>Tailwind CSS</li>
-                <li>Responsive Design</li>
-                <li>Webpack</li>
-                <li>Babel</li>
-                <li>jQuery</li>
-                <li>AJAX</li>
-                <li>REST APIs</li>
-                <li>GraphQL</li>
-                <li>Progressive Web Apps (PWAs)</li>
-                <li>Cross-Browser Compatibility</li>
-                <li>UI/UX Design</li>
-                <li>Figma</li>
-                <li>Adobe XD</li>
-                <li>Performance Optimization</li>
-                <li>Testing (Jest, Mocha)</li>
-                <li>Accessibility (a11y)</li>
-                <li>Gulp</li>
-                <li>Version Control (Git)</li>
-                <li>Node.js</li>
-                <li>Express.js</li>
-                <li>Python</li>
-                <li>Django</li>
-                <li>Flask</li>
-                <li>Ruby on Rails</li>
-                <li>PHP</li>
-                <li>Laravel</li>
-                <li>Java</li>
-                <li>Spring Boot</li>
-                <li>C#</li>
-                <li>.NET Core</li>
-                <li>Go</li>
-                <li>Microservices Architecture</li>
-                <li>RESTful Services</li>
-                <li>GraphQL</li>
-                <li>SQL Databases (MySQL, PostgreSQL)</li>
-                <li>NoSQL Databases (MongoDB, Redis)</li>
-                <li>Database Design</li>
-                <li>Authentication & Authorization</li>
-                <li>APIs Development</li>
-                <li>Message Brokers (RabbitMQ, Kafka)</li>
-                <li>Containerization (Docker)</li>
-                <li>Cloud Platforms (AWS, Azure, GCP)</li>
-                <li>Serverless Architecture</li>
-                <li>Unity</li>
-                <li>Unreal Engine</li>
-                <li>C#</li>
-                <li>C++</li>
-                <li>Game Design</li>
-                <li>3D Modeling</li>
-                <li>Animation</li>
-                <li>Physics</li>
-                <li>AI Programming</li>
-                <li>Networking</li>
-                <li>Shader Programming</li>
-                <li>Multiplayer Systems</li>
-                <li>Performance Optimization</li>
-                <li>Game Mechanics</li>
-                <li>UI/UX for Games</li>
-                <li>Virtual Reality (VR)</li>
-                <li>Augmented Reality (AR)</li>
-                <li>Level Design</li>
-                <li>Asset Management</li>
-                <li>Version Control (Git)</li>
-                <li>Debugging & Profiling</li>
-                <li>Sound Design</li>
-                <li>Interactive Storytelling</li>
-                <li>Project Management</li>
-                <li>Agile Methodologies</li>
-                <li>Scrum</li>
-                <li>Kanban</li>
-                <li>Risk Management</li>
-                <li>Team Leadership</li>
-                <li>Stakeholder Communication</li>
-                <li>Resource Allocation</li>
-                <li>Budgeting</li>
-                <li>Strategic Planning</li>
-                <li>Performance Metrics</li>
-                <li>Change Management</li>
-                <li>Conflict Resolution</li>
-                <li>Time Management</li>
-                <li>Process Improvement</li>
-                <li>Decision Making</li>
-                <li>Employee Development</li>
-                <li>Training and Mentoring</li>
-                <li>Client Relationship Management</li>
-                <li>Reporting & Documentation</li>
-                <li>Product Lifecycle Management</li>
-                <li>Organizational Behavior</li>
-                <li>GraphQL</li>
-                <li>Performance Tuning</li>
-                <li>RESTful APIs</li>
-                <li>Security Practices</li>
-                <li>Database Management</li>
-                <li>ORM (Object-Relational Mapping)</li>
-                <li>DevOps</li>
-                <li>Continuous Integration (CI)</li>
-                <li>Continuous Deployment (CD)</li>
-                <li>Monitoring and Logging</li>
-                <li>API Documentation</li>
-                <li>Debugging Techniques</li>
-                <li>Code Review</li>
-                <li>Software Design Patterns</li>
-                <li>Event-Driven Architecture</li>
-                <li>API Gateway</li>
-                <li>Service-Oriented Architecture (SOA)</li>
-                <li>OAuth</li>
-                <li>JWT (JSON Web Tokens)</li>
-                <li>Data Warehousing</li>
-                <li>ETL (Extract, Transform, Load)</li>
-                <li>Data Mining</li>
-                <li>Data Analysis</li>
-                <li>Big Data Technologies</li>
-                <li>Machine Learning</li>
-                <li>AI Algorithms</li>
-                <li>Natural Language Processing (NLP)</li>
-                <li>Computer Vision</li>
-                <li>Deep Learning</li>
-                <li>Reinforcement Learning</li>
-                <li>Game Engines</li>
-                <li>Shader Programming</li>
-                <li>Physics Engines</li>
-                <li>Pathfinding Algorithms</li>
-                <li>Procedural Generation</li>
-                <li>Level Optimization</li>
-                <li>Game Analytics</li>
-                <li>Augmented Reality (AR)</li>
-                <li>Virtual Reality (VR)</li>
-                <li>Mixed Reality (MR)</li>
-                <li>Game Monetization</li>
-                <li>Ad Integration</li>
-                <li>Player Retention Strategies</li>
-                <li>Game Balancing</li>
-                <li>Game Testing</li>
-                <li>Beta Testing</li>
-                <li>Release Management</li>
-                <li>Community Management</li>
-                <li>Content Creation</li>
-                <li>Storyboarding</li>
-                <li>Voice Acting</li>
-                <li>Sound Effects</li>
-                <li>Music Composition</li>
-                <li>Localization</li>
-                <li>Internationalization</li>
-                <li>Game Marketing</li>
-                <li>Game Distribution Platforms</li>
-                <li>Analytics Tools</li>
-                <li>Financial Management</li>
-                <li>Investment Strategies</li>
-                <li>Business Development</li>
-                <li>Negotiation Skills</li>
-                <li>Public Speaking</li>
-                <li>Presentation Skills</li>
-                <li>Networking</li>
-                <li>Event Planning</li>
-                <li>Customer Support</li>
-                <li>Customer Feedback Analysis</li>
-                <li>Quality Assurance</li>
-                <li>Usability Testing</li>
-                <li>Human-Computer Interaction (HCI)</li>
-                <li>Prototyping</li>
-                <li>Wireframing</li>
-                <li>Interaction Design</li>
-                <li>Visual Design</li>
-                <li>Information Architecture</li>
-                <li>Content Strategy</li>
-                <li>Branding</li>
-                <li>Marketing Strategy</li>
-                <li>Product Management</li>
-                <li>Roadmapping</li>
-                <li>Feature Prioritization</li>
-                <li>Release Planning</li>
-                <li>Performance Reviews</li>
-                <li>Team Building</li>
-                <li>Organizational Development</li>
-                <li>Change Management</li>
-                <li>Employee Engagement</li>
-                <li>Conflict Mediation</li>
-                <li>Workforce Planning</li>
-                <li>Succession Planning</li>
-                <li>Talent Acquisition</li>
-                <li>Recruitment Strategies</li>
-                <li>Onboarding</li>
-                <li>Employee Retention</li>
-                <li>HR Policies</li>
-                <li>Compliance Management</li>
-                <li>Legal Knowledge</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">HTML</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">The ability to fly</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">The ability to walk on water</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">The ability to turn things into gold</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">CSS</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">JavaScript</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">React</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Angular</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Vue.js</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">TypeScript</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">SASS/LESS</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Bootstrap</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Tailwind CSS</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Responsive Design</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Webpack</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Babel</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">jQuery</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">AJAX</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">REST APIs</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">GraphQL</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Progressive Web Apps (PWAs)</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Cross-Browser Compatibility</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">UI/UX Design</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Figma</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Adobe XD</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Performance Optimization</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Testing (Jest, Mocha)</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Accessibility (a11y)</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Gulp</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Version Control (Git)</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Node.js</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Express.js</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Python</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Django</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Flask</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Ruby on Rails</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">PHP</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Laravel</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Java</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Spring Boot</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">C#</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">.NET Core</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Go</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Microservices Architecture</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">RESTful Services</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">GraphQL</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">SQL Databases (MySQL, PostgreSQL)</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">NoSQL Databases (MongoDB, Redis)</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Database Design</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Authentication & Authorization</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">APIs Development</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Message Brokers (RabbitMQ, Kafka)</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Containerization (Docker)</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Cloud Platforms (AWS, Azure, GCP)</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Serverless Architecture</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Unity</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Unreal Engine</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">C#</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">C++</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Game Design</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">3D Modeling</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Animation</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Physics</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">AI Programming</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Networking</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Shader Programming</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Multiplayer Systems</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Performance Optimization</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Game Mechanics</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">UI/UX for Games</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Virtual Reality (VR)</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Augmented Reality (AR)</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Level Design</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Asset Management</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Version Control (Git)</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Debugging & Profiling</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Sound Design</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Interactive Storytelling</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Project Management</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Agile Methodologies</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Scrum</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Kanban</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Risk Management</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Team Leadership</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Stakeholder Communication</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Resource Allocation</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Budgeting</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Strategic Planning</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Performance Metrics</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Change Management</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Conflict Resolution</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Time Management</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Process Improvement</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Decision Making</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Employee Development</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Training and Mentoring</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Client Relationship Management</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Reporting & Documentation</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Product Lifecycle Management</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Organizational Behavior</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">GraphQL</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Performance Tuning</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">RESTful APIs</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Security Practices</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Database Management</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">ORM (Object-Relational Mapping)</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">DevOps</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Continuous Integration (CI)</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Continuous Deployment (CD)</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Monitoring and Logging</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">API Documentation</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Debugging Techniques</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Code Review</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Software Design Patterns</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Event-Driven Architecture</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">API Gateway</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Service-Oriented Architecture (SOA)</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">OAuth</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">JWT (JSON Web Tokens)</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Data Warehousing</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">ETL (Extract, Transform, Load)</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Data Mining</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Data Analysis</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Big Data Technologies</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Machine Learning</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">AI Algorithms</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Natural Language Processing (NLP)</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Computer Vision</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Deep Learning</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Reinforcement Learning</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Game Engines</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Shader Programming</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Physics Engines</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Pathfinding Algorithms</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Procedural Generation</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Level Optimization</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Game Analytics</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Augmented Reality (AR)</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Virtual Reality (VR)</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Mixed Reality (MR)</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Game Monetization</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Ad Integration</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Player Retention Strategies</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Game Balancing</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Game Testing</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Beta Testing</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Release Management</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Community Management</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Content Creation</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Storyboarding</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Voice Acting</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Sound Effects</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Music Composition</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Localization</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Internationalization</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Game Marketing</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Game Distribution Platforms</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Analytics Tools</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Financial Management</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Investment Strategies</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Business Development</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Negotiation Skills</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Public Speaking</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Presentation Skills</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Networking</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Event Planning</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Customer Support</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Customer Feedback Analysis</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Quality Assurance</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Usability Testing</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Human-Computer Interaction (HCI)</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Prototyping</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Wireframing</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Interaction Design</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Visual Design</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Information Architecture</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Content Strategy</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Branding</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Marketing Strategy</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Product Management</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Roadmapping</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Feature Prioritization</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Release Planning</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Performance Reviews</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Team Building</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Organizational Development</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Change Management</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Employee Engagement</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Conflict Mediation</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Workforce Planning</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Succession Planning</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Talent Acquisition</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Recruitment Strategies</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Onboarding</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Employee Retention</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">HR Policies</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Compliance Management</li>
+                <li data-aos="flip-left" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Legal Knowledge</li>
             </ul>
         </div>
-
     </section>
 </main>
 <footer>
@@ -284,5 +315,12 @@
 
 <!-- Font Awesome Icons -->
 <script src="https://kit.fontawesome.com/29456f816e.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        once: false
+    });
+</script>
 </body>
 </html>
