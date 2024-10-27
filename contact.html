@@ -51,11 +51,12 @@
             data-aos-anchor-placement="bottom-bottom">Contact</h2>
         <div class="contact">
             <form class="contact__form" data-aos="flip-left"
-                  data-aos-duration="1500"
-                  data-aos-anchor-placement="bottom-bottom">
+                data-aos-duration="1500"
+                data-aos-anchor-placement="bottom-bottom"
+                onsubmit="welcome()">
                 <div class="contact__halfline">
-                    <label for="name">Your name</label>
-                    <input required type="text" name="name" id="name" placeholder="Enter your name here">
+                    <label for="fname">First name</label>
+                    <input required type="text" name="fname" id="fname" placeholder="Enter your first name here">
                 </div>
                 <div class="contact__halfline">
                     <label for="project">Choose project</label>
@@ -88,6 +89,19 @@
     AOS.init({
         once: false
     });
+</script>
+
+<script>
+    function welcome() {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+
+        const data = [];
+        for (let [key, value] of formData.entries()) {
+            data.push(value);
+        }
+        alert(`Hello, ${data[0]}.\nYou want this: ${data[1]}.\nDescription: ${data[2]}`);
+    }
 </script>
 </body>
 </html>

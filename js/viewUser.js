@@ -1,0 +1,84 @@
+const userId = Number(window.location.search.split("id=")[1]);
+
+const users = JSON.parse(localStorage.getItem("users"));
+const user = users.find(u => u.id == userId);
+
+const admin = {
+    "email": "admin@astanait.edu.kz",
+    "password": "qwerty123asd"
+};
+
+function validateAdmin(email, password) {
+    if(email === admin["email"] && password === admin["password"]) {
+        fillAdminPage();
+    } else {
+        alert("Incorrect data!")
+    }
+}
+
+function fillAdminPage() {
+    main.innerHTML =
+`
+<div class="card col-11 mx-auto mt-3 p-3">
+    <div class="card-body">
+        <h1 class="card-title">View User Info</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Key</th>
+                    <th scope="col">Value</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <td>ID</td>
+                    <td>${user.id}</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>${user.email}</td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>${user.password}</td>
+                </tr>
+                <tr>
+                    <td>Fisrt Name</td>
+                    <td>${user.fname}</td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>${user.lname}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+`;
+};
+
+// Creating page content
+const main = document.querySelector(".main");
+main.innerHTML = `
+<div class="card col-6 mx-auto mt-3 p-3">
+    <div class="card-body">
+        <h1 class="card-title mb-3">Log in</h1>
+        <form class="form">
+            <div class="mb-3">
+                <label for="email">Enter email</label>
+                <input class="form-control" type="email" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="password">Enter password</label>
+                <input class="form-control" type="password" id="password" required>
+            </div>
+            <button class="btn btn-primary col-12" id="submitLogin">Log in</button>
+        </form>
+    </div>
+</div>`;
+
+document.getElementById("submitLogin").addEventListener("click", () => {
+    event.preventDefault();
+    validateAdmin(document.getElementById("email").value,
+        document.getElementById("password").value);
+})

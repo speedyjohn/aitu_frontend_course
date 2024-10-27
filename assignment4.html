@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/style.css">
+      <title>Du Rove</title>
+</head>
+<body>
+<header class="header navbar navbar-expand-lg">
+  <nav class="container-fluid">
+    <a class="navbar-brand text-light" href="/">Du Rove</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link header__menu-link" href="index.html">Main</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link header__menu-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link header__menu-link" href="experience.html">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link header__menu-link" href="testimonials.html">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link header__menu-link" href="price.html">Price</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link header__menu-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main class="main">
+  <section class="section">
+    <h2 class="section__title" >Welcome</h2>
+    <div class="contact ass4">
+        <button class="section__link section__link--wide lll"
+                 onclick="welcome()">Start</button>
+      <h2 class="section__title" >Check license</h2>
+        <button  class="section__link section__link--wide mt-5 lll"
+                 onclick="checkLicense()">Start</button>
+      <div class="m"></div>
+      <h2 class="section__title" >Check number</h2>
+        <button  class="section__link section__link--wide mt-5 lll"
+                 onclick="checkNumber()">Start</button>
+      <h2 class="section__title" >Check type</h2>
+        <button  class="section__link section__link--wide mt-5 lll"
+                 onclick="checkType()">Start</button>
+      <h2 class="section__title" >Calculate area</h2>
+        <button  class="section__link section__link--wide mt-5 lll"
+                 onclick="area()">Start</button>
+      <h2 class="section__title" >Colors</h2>
+        <button  class="section__link section__link--wide mt-5 lll"
+                 onclick="colors()">Start</button>
+      <h2 class="section__title" >User info</h2>
+        <button  class="section__link section__link--wide mt-5 lll"
+                 onclick="userInfo()">Start</button>
+      <h2 class="section__title" >Numbers</h2>
+        <button  class="section__link section__link--wide mt-5 lll"
+                 onclick="numbers()">Start</button>
+      <h2 class="section__title" >Fruits</h2>
+        <button  class="section__link section__link--wide mt-5 lll"
+                 onclick="fruits()">Start</button>
+      <h2 class="section__title" >Calculator</h2>
+        <button  class="section__link section__link--wide mt-5 lll"
+                 onsubmit="calculator()">Start</button>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>This website is created by Ismail Ragimov, Sergey Tarshilov, Kanagat Zholdasov</p>
+  <p>Astana IT University, 2024, Web Technologies(Frontend) course, 1st assigment</p>
+  <p>All rights reserved ©</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: false
+  });
+</script>
+
+<script>
+  function welcome() {
+    event
+    const inputFname = prompt("Enter first name: ");
+    const inputLname = prompt("Enter last name: ");
+    const age = prompt("Enter age: ");
+    console.log(`Hello, ${inputFname} ${inputLname}.\nYour age: ${age}`);
+  }
+
+  function checkLicense() {
+    const age = Number(prompt("Enter age: "));
+    let license = "";
+    if(age >= 18) {
+      license = "Yes";
+    } else {
+      license = "No";
+    }
+    console.log(`Age: ${age}\nDriver's license: ${license}`);
+  }
+
+  function checkNumber() {
+    const num = Number(prompt("Enter number: "));
+    const isEven = num % 2 === 0;
+    const isOdd = !isEven;
+    const isMultiplyOf5 = num % 5 === 0;
+    const isGreaterThan10 = num > 10;
+    console.log(`You entered: ${num}`);
+    console.log(`Is the number even? ${isEven}`);
+    console.log(`Is the number odd? ${isOdd}`);
+    console.log(`Is the number a multiply of 5? ${isMultiplyOf5}`);
+    console.log(`Is the number greated than 10? ${isGreaterThan10}`);
+    if(isMultiplyOf5 || isGreaterThan10) {
+      console.log("The number is special!");
+    }
+  }
+
+  function checkType() {
+    const inputNum = Number(prompt("Enter number: "));
+    const inputString = prompt("Enter string: ");
+    const inputBool = prompt("Enter bool: ").toLowerCase() === "true";
+    console.log(`Data: ${inputNum}\nType: ${typeof(inputNum)}`);
+    console.log(`Data: ${inputString}\nType: ${typeof(inputString)}`);
+    console.log(`Data: ${inputBool}\nType: ${typeof(inputBool)}`);
+  }
+
+  function area() {
+    let length = prompt("Enter length: ");
+    let width = prompt("Enter width: ");
+    let updateLength = prompt("Do you want to update length? y/n");
+    if(updateLength === "y") {
+      let length = prompt("Enter length: ");
+    }
+    let updateWidth = prompt("Do you want to update width? y/n");
+    if(updateWidth === "y") {
+      let width = prompt("Enter width: ");
+    }
+    const area = Number(length) * Number(width);
+    console.log(`Area is ${area}`)
+  }
+;
+  function colors() {
+    let number = Number(prompt("Enter number of colors: "));
+    const arr = [];
+    for(let i = 0; i < number; i++) {
+      const color = prompt("Enter color: ")
+      arr.push(color);
+    }
+    console.log(`First color: ${arr[0]}\nLast color: ${arr[arr.length - 1]}`);
+    console.log(arr);
+  }
+
+  function userInfo() {
+    const info = {};
+    const name = prompt("Enter name: ");
+    const age = Number(prompt("Enter age: "));
+    const hobby = prompt("Enter hobby: ");
+    info["name"] = name;
+    info["age"] = age;
+    info["hobby"] = hobby;
+    console.log(info);
+  }
+
+  function numbers() {
+    const first = Number(prompt("First number"));
+    const second = Number(prompt("Second number"));
+    const greater = first > second;
+    const less = first < second;
+    const equal = first === second;
+    console.log(`First is greater than second: ${greater}`);
+    console.log(`First is less than second: ${less}`);
+    console.log(`First is equal to second: ${equal}`);
+  }
+
+
+  function fruits() {
+    let number = Number(prompt("Enter number of fruits: "));
+    const arr = [];
+    for(let i = 0; i < number; i++) {
+      arr.push(prompt("Enter fruit: "));
+    }
+    arr.unshift(prompt("Add fruit at the beginning: "));
+    arr.pop()
+
+    console.log(`Updated fruit list: ${arr}`);
+  }
+
+  function calculator() {
+    const first = Number(prompt("Enter first number: "));
+    const second = Number(prompt("Enter second number: "));
+    if (isNaN(first) || isNaN(second)) {
+      console.log("Invalid input: Please enter valid numbers.");
+      return;
+    }
+    const action = prompt("Enter action(+,-,*,/): ")
+    switch(action) {
+      case '+':
+        console.log(`${first} + ${second} = ${first + second}`);
+        break;
+      case '-':
+        console.log(`${first} - ${second} = ${first - second}`);
+        break;
+      case '*':
+        console.log(`${first} * ${second} = ${first * second}`);
+        break;
+      case '/':
+        if (second === 0) {
+          console.log("Error: Division by zero is not allowed.");
+        } else {
+          console.log(`${first} / ${second} = ${first / second}`);
+        }
+        break;
+      default:
+        console.log("Invalid operation: Please enter a valid action (+, -, *, /).");
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  const arr = []
+  const number = Number(prompt("enter number of colors: "))
+  for(let i = 0; i < number; i++) {
+      arr.push(prompt("Enter colors"))
+  }
+  for(let i = 0; i < number; i++) {
+      console.log(arr[i])
+  }
+
+  console.log(arr)
+  {
+      1: nameafds
+      2: sdfasdf
+  }
+    object["key"] = value
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<script>
+    fetch('../js/users.json')
+        .then(response => response.json())
+        .then(data => {
+        localStorage.setItem("users", JSON.stringify(data))
+        })
+    .catch(error => console.error('Ошибка при загрузке JSON:', error));
+    alert("Data is set!")
+</script>
