@@ -1,16 +1,14 @@
 const users = JSON.parse(localStorage.getItem("users"));
 const admin = users.find(u => u.id === 10000);
-
-if(localStorage.getItem("user") !== null) {
-    const user = localStorage.getItem("user");
-    if(user === admin.email) {
+const currentUser = localStorage.getItem("user");
+if(currentUser !== null) {
+    if(currentUser === admin.email) {
         window.location.replace("/ass1/admin/index.html");
     } else {
         window.location.replace("/ass1/profile.html")
     }
 }
 
-// Creating page content
 const main = document.querySelector(".main");
 main.innerHTML = `
 <div class="card col-6 mx-auto mt-3 p-3">
@@ -33,7 +31,6 @@ main.innerHTML = `
 
 document.getElementById("submitLogin").addEventListener("click", () => {
     event.preventDefault();
-    console.log(123);
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     const user = users.find(u => u.email === email && u.password === password);
