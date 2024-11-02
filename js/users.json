@@ -1,0 +1,79 @@
+[
+  {
+    "id": 10000,
+    "email": "admin@astanait.edu.kz",
+    "password": "qwerty123asd",
+    "fname": "Admin",
+    "lname": "Admin"
+  },
+  {
+    "id": 1,
+    "email": "john.doe@example.com",
+    "password": "password123",
+    "fname": "John",
+    "lname": "Doe"
+  },
+  {
+    "id": 2,
+    "email": "jane.smith@example.com",
+    "password": "password456",
+    "fname": "Jane",
+    "lname": "Smith"
+  },
+  {
+    "id": 3,
+    "email": "michael.johnson@example.com",
+    "password": "password789",
+    "fname": "Michael",
+    "lname": "Johnson"
+  },
+  {
+    "id": 4,
+    "email": "emily.brown@example.com",
+    "password": "password012",
+    "fname": "Emily",
+    "lname": "Brown"
+  },
+  {
+    "id": 5,
+    "email": "chris.jones@example.com",
+    "password": "password345",
+    "fname": "Chris",
+    "lname": "Jones"
+  },
+  {
+    "id": 6,
+    "email": "sarah.miller@example.com",
+    "password": "password678",
+    "fname": "Sarah",
+    "lname": "Miller"
+  },
+  {
+    "id": 7,
+    "email": "david.wilson@example.com",
+    "password": "password901",
+    "fname": "David",
+    "lname": "Wilson"
+  },
+  {
+    "id": 8,
+    "email": "laura.moore@example.com",
+    "password": "password234",
+    "fname": "Laura",
+    "lname": "Moore"
+  },
+  {
+    "id": 9,
+    "email": "daniel.taylor@example.com",
+    "password": "password567",
+    "fname": "Daniel",
+    "lname": "Taylor"
+  },
+  {
+    "id": 10,
+    "email": "olivia.anderson@example.com",
+    "password": "password890",
+    "fname": "Olivia",
+    "lname": "Anderson"
+  }
+]

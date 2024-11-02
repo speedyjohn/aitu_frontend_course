@@ -1,19 +1,7 @@
-const admin = {
-    "email": "admin@astanait.edu.kz",
-    "password": "qwerty123asd"
-};
 const users = JSON.parse(localStorage.getItem("users"));
-
-function validateAdmin(email, password) {
-    if(email === admin["email"] && password === admin["password"]) {
-        fillAdminPage();
-    } else {
-        alert("Incorrect data!")
-    }
-}
-
+const admin = users.find(u => u.id === 10000);
+const userEmail = localStorage.getItem("user");
 function deleteUser(userId) {
-    console.log(123)
     const userIndex = users.findIndex(u => u.id === userId);
     if (userIndex !== -1) {
         users.splice(userIndex, 1);
@@ -25,13 +13,13 @@ function deleteUser(userId) {
     }
 }
 
-
 function fillAdminPage() {
     main.innerHTML =
 `
 <div class="card col-11 mx-auto mt-3 p-3">
+    <a href="/ass1/index.html">Main page</a>
     <div class="card-body">
-        <h1 class="card-title mb-3 text-center">Users</h1>
+        <h1 class="card-title mb-3 text-center" id="title12">Users</h1>
         <a class="mb-3 btn btn-primary" href="/ass1/admin/createUser.html">Create new user</a>
         <table class="table table-striped">
             <thead>
@@ -70,26 +58,18 @@ function fillAdminPage() {
 
 // Creating page content
 const main = document.querySelector(".main");
-main.innerHTML = `
-<div class="card col-6 mx-auto mt-3 p-3">
-    <div class="card-body">
-        <h1 class="card-title mb-3">Log in</h1>
-        <form class="form">
-            <div class="mb-3">
-                <label for="email">Enter email</label>
-                <input class="form-control" type="email" id="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="password">Enter password</label>
-                <input class="form-control" type="password" id="password" required>
-            </div>
-            <button class="btn btn-primary col-12" id="submitLogin">Log in</button>
-        </form>
-    </div>
-</div>`;
 
-document.getElementById("submitLogin").addEventListener("click", () => {
-    event.preventDefault();
-    validateAdmin(document.getElementById("email").value,
-        document.getElementById("password").value);
-});
+if(localStorage.getItem("user") === admin.email) {
+    fillAdminPage();
+} else {
+    window.location.replace("/ass1/login.html")
+}
+if(userEmail !== null) {
+    if(userEmail === admin.email) {
+        fillAdminPage();
+    } else {
+        window.location.replace("/ass1/profile.html")
+    }
+} else {
+    window.location.replace("/ass1/login.html")
+}
