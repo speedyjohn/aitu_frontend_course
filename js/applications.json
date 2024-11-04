@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "username": "Ismail",
+    "type": "website",
+    "description": "Create website pls"
+  },
+  {
+    "id": 2,
+    "username": "Sergey",
+    "type": "telegrambot",
+    "description": "Create telegram bot pls"
+  },
+  {
+    "id": 3,
+    "username": "Kana",
+    "type": "discordbot",
+    "description": "Create discord bot pls"
+  }
+]

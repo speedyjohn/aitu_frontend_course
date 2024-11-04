@@ -2,8 +2,14 @@
     fetch('../js/users.json')
         .then(response => response.json())
         .then(data => {
-        localStorage.setItem("users", JSON.stringify(data))
+        localStorage.setItem("users", JSON.stringify(data));
         })
     .catch(error => console.error('Ошибка при загрузке JSON:', error));
+    fetch('../js/applications.json')
+        .then(response => response.json())
+        .then(data => {
+            localStorage.setItem("applications", JSON.stringify(data));
+        })
+        .catch(error => console.error('Ошибка при загрузке JSON:', error));
     alert("Data is set!")
 </script>

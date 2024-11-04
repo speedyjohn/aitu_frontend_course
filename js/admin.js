@@ -18,6 +18,7 @@ function fillAdminPage() {
 `
 <div class="card col-11 mx-auto mt-3 p-3">
     <a href="/ass1/index.html">Main page</a>
+    <a href="/ass1/admin/applications.html">Applications</a>
     <div class="card-body">
         <h1 class="card-title mb-3 text-center" id="title12">Users</h1>
         <a class="mb-3 btn btn-primary" href="/ass1/admin/createUser.html">Create new user</a>

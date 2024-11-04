@@ -55,6 +55,6 @@ function fillAdminPage() {
         localStorage.setItem("users", JSON.stringify(users));
         alert("New user saved successfully!");
         window.location.replace("/ass1/admin/index.html");
-    })
+    });
 }
 

@@ -235,12 +235,12 @@
                       data-aos-duration="1500"
                       data-aos-anchor-placement="bottom-bottom">
                     <div class="contact__halfline">
-                        <label for="name">Your name</label>
-                        <input required type="text" name="name" id="name" placeholder="Enter your name here">
+                        <label for="username">Your name</label>
+                        <input required type="text" name="username" id="username" placeholder="Enter your name here">
                     </div>
                     <div class="contact__halfline">
-                        <label for="project">Choose project</label>
-                        <select name="project" id="project">
+                        <label for="type">Choose project</label>
+                        <select name="type" id="type">
                             <option value="website">Website</option>
                             <option value="telegrambot">Telegram Bot</option>
                             <option value="landing">Landing page</option>
@@ -250,13 +250,28 @@
                         </select>
                     </div>
                     <div class="contact__line">
-                        <label for="details" style="font-size: 20px;">Describe the details</label>
-                        <textarea required name="details" id="details"></textarea>
+                        <label for="description" style="font-size: 20px;">Describe the details</label>
+                        <textarea required name="description" id="description"></textarea>
                     </div>
-                    <button type="submit" class="section__link section__link--wide" data-aos="flip-left"
+                    <button class="section__link section__link--wide" id="submitData" data-aos="flip-left"
                             data-aos-duration="1500"
                             data-aos-anchor-placement="bottom-bottom">Send Message</button>
                 </form>
+                <script>
+                    document.getElementById("submitData").addEventListener("click", () => {
+                        event.preventDefault();
+                        const applications = JSON.parse(localStorage.getItem("applications"));
+                        const application = {
+                            id: applications.length > 0 ? applications[applications.length - 1].id + 1 : 1,
+                            username: document.getElementById("username").value,
+                            type: document.getElementById("type").value,
+                            description: document.getElementById("description").value,
+                        };
+                        applications.push(application);
+                        localStorage.setItem("applications", JSON.stringify(applications));
+                        alert("New application saved successfully!");
+                    });
+                </script>
             </div>
         </section>
     </main>
